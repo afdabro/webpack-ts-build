@@ -8,6 +8,12 @@ Webpack Build
 ## Purpose
 Simplify the configuration and building of Typescript, Webpack, React, etc. etc.
 
+## Installation
+
+```
+npm install webpack-ts-build
+```
+
 ## FAQ
 
 ### Where can I find a simple example of how to use the build package?
