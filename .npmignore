@@ -16,3 +16,6 @@ coverage
 # Tests
 jest.config.json
 tests
+
+# TypeScript
+tsconfig.json

@@ -1,0 +1,26 @@
+{
+    "compilerOptions": {
+      "baseUrl": "source",
+      "alwaysStrict": true,
+      "forceConsistentCasingInFileNames": true,
+      "outDir": "./bin/",
+      "sourceMap": true,
+      "allowSyntheticDefaultImports": true,
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "noImplicitAny": false,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noUnusedParameters": true,
+      "noUnusedLocals": true,
+      "module": "commonjs",
+      "target": "es5",
+      "lib": ["es6", "dom"],
+      "jsx": "react",
+      "allowJs": true
+    },
+    "exclude": [
+      "node_modules",
+      "bin"
+    ]
+  }

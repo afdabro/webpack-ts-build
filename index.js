@@ -1,21 +1,25 @@
-// TODO: describe 
-/*
+'use strict';
+
+const Classes = Object.create(null);
+
 const options = {
-    'isDev': isDev,
+    'isDev': true,
     'faviconPath': 'assets/favicon.ico',
-    'domainHost': domainHost,
-    'sourcePath': sourcePath,
+    'domainHost': '',
+    'sourcePath': '',
     'appLoader': './appLoader',
-    'buildPath': buildPath,
-    'appPlugins': appPlugins
-};*/
+    'buildPath': '',
+    'appPlugins': [],
+};
+
+module.exports.options = options;
 
 /**
 * Generates a default webpack configuration based on the options provided.
-* @param {object} options - configuration options.
+* @param {options} options - configuration options.
 * @return {object} default webpack configuration
 */
-module.exports = function defaultWebpack(options) {
+module.exports.defaultWebpack = function defaultWebpack(options) {
     const defaultWebpack = loadClass('default.webpack');
     return defaultWebpack(options);
 };
@@ -24,7 +28,7 @@ module.exports = function defaultWebpack(options) {
  * Executes a production build using the webpack configuration.
  * @param {object} webpackConfig - webpack configuratin.
  */
-module.exports = function buildProd(webpackConfig) {
+module.exports.buildProd = function buildProd(webpackConfig) {
     const buildProd = loadClass('build.prod');
     buildProd(webpackConfig);
 };
@@ -34,7 +38,7 @@ module.exports = function buildProd(webpackConfig) {
  * @param {object} webpackConfig - webpack configuratin.
  * @param {string} contentBase - base content path.
  */
-module.exports = function devServer(webpackConfig, contentBase) {
+module.exports.devServer = function devServer(webpackConfig, contentBase) {
     const devServer = loadClass('dev.server');
     devServer(webpackConfig, contentBase);
 };
