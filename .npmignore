@@ -1,0 +1,21 @@
+# Eaxmples directory
+examples
+
+# VSCode IDE settings
+.vscode
+
+# Linting Rules
+.eslintrc.yml
+
+# Travis
+.travis.yml
+
+# Coverage
+coverage
+
+# Tests
+jest.config.json
+tests
+
+# TypeScript
+tsconfig.json
